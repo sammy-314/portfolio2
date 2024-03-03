@@ -5,138 +5,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            height: 177.78vh; /* 100% * (16/9) */
+            position: relative;
+        }
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .section {
+            height: 11.11%; /* 100% / 9 */
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="logo">Portfolio</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#work-experience">Work Experience</a></li>
-                <li><a href="#socials">Social</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header class="section">
+            <div class="content">
+                <div class="logo">Portfolio</div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#work-experience">Work Experience</a></li>
+                        <li><a href="#socials">Social</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <section id="home" class="section">
-        <div class="content">
-            <h1>SAMYAK TRIPATHI</h1>
-            <h2>Welcome to My Portfolio</h2>
-        </div>
-    </section>
+        <section id="home" class="section">
+            <div class="content">
+                <h1>SAMYAK TRIPATHI</h1>
+                <h2>Welcome to My Portfolio</h2>
+            </div>
+        </section>
 
-    <section id="about" class="section">
-        <div class="content">
-            <h2>About Me</h2>
-            <p>I'm a passionate web developer with expertise in HTML, CSS, and JavaScript. I specialize in crafting immersive and dynamic web experiences that captivate users and elevate brands. With a keen eye for design and a commitment to excellence, I'm dedicated to pushing the boundaries of web development to create innovative solutions.
+        <section id="about" class="section">
+            <div class="content">
+                <h2>About Me</h2>
+                <p>I'm a passionate web developer with expertise in HTML, CSS, and JavaScript. I specialize in crafting immersive and dynamic web experiences that captivate users and elevate brands. With a keen eye for design and a commitment to excellence, I'm dedicated to pushing the boundaries of web development to create innovative solutions.
 
                 Driven by curiosity and a hunger for knowledge, I'm constantly exploring emerging technologies and industry trends to ensure my work remains at the forefront of the digital landscape. I'm deeply committed to using technology to drive positive change and tackle real-world challenges.
                 
                 Beyond coding, I enjoy photography, hiking, and playing the guitar. As a strong advocate for open-source software, I actively contribute to projects on GitHub, collaborating with the global developer community to create a brighter future for all.</p>
-        </div>
-    </section>
-
-
-
-    <section id="education" class="section">
-        <div class="content">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>12th - Shanti Asiatic School</h3>
-                <h3>2022</h3>
-                <p>Completed high school with Physics, Chemistry, Mathematics and Computer Science.</p>
             </div>
-            <div class="education-item">
-                <h3>B.Tech in Computer Science Engineering - SRM Institute of Science and Technology</h3>
-                <h3>2022-2026</h3>
-                <p>Pursuing Bachelor's degree in Computer Science Engineering. Currently in the second year of the program.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="work-experience" class="section">
-        <div class="content">
-            <h2>Work Experience</h2>
-            <div class="experience-item">
-                <h3>Web Developer & Digital Marketing Intern - B2B Industrialists</h3>
-                <h3>Sep 2023 - Oct2023</h3>
-                <p>Worked as an intern in the web development and digital marketing departments.</p>
-                <p>Developed and maintained company websites and web applications using HTML, CSS, and JavaScript.</p>
-                <p>Assisted in creating and implementing digital marketing strategies, including SEO and social media campaigns.</p>
-                <p>Contributed to the redesign of the company's website, resulting in a 30% increase in user engagement.</p>
-                <p>Provided technical support and troubleshooting for website issues.</p>
-            </div>
-            <div class="experience-item">
-                <h3>Frontend Developer Intern - IBM Skillsbuild.</h3>
-                <h3>Jun 2023 - Jul2023</h3>
-                <p>Interned as a frontend developer, contributing to various web development projects.</p>
-                <p>Collaborated with the design team to implement responsive and user-friendly interfaces.</p>
-                <p>Participated in code reviews and provided feedback on code quality and best practices.</p>
-                <p>Implemented new features and enhancements for the company's flagship product, resulting in improved user experience and performance.</p>
-                <p>Worked closely with backend developers to integrate frontend components with server-side logic.</p>
-            </div>
-        </div>
-    </section>
-    <section id="projects" class="section">
-        <div class="content">
-            <h2>Projects</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <h3>Car Accesories Management System</h3>
-                    <h3>Sep 2023</h3>
-                    <p>The Car Accessories Management System project was completed using Java Swing, AWT, and JFrame. The intuitive user interface, crafted with meticulous design, ensured seamless navigation and interaction. Leveraging Java's graphical capabilities, the system offered a visually appealing experience while maintaining robust functionality. Thorough testing and debugging ensured reliability and performance, delivering an effective solution for managing car accessories.</p>
-                    <a href="front end\Car Accessories Management.pdf" download class="button">View Project</a>
+        <section id="education" class="section">
+            <div class="content">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>12th - Shanti Asiatic School</h3>
+                    <h3>2022</h3>
+                    <p>Completed high school with Physics, Chemistry, Mathematics and Computer Science.</p>
                 </div>
-                <div class="portfolio-item">
-                    <h3>Student Databse Management System</h3>
-                    <h3>Nov 2023</h3>
-                    <p>The project entailed developing a Student Database Management System using HTML, CSS, and JavaScript. It featured an HTML-based interface styled with CSS for a sleek appearance. JavaScript was utilized for backend operations like data manipulation and form validation. The system allowed users to seamlessly add, edit, and delete student records, providing an efficient solution for managing student data.</p>
-                    <a href="front end\Student Databse Management.pdf" download class="button">View Project</a>
+                <div class="education-item">
+                    <h3>B.Tech in Computer Science Engineering - SRM Institute of Science and Technology</h3>
+                    <h3>2022-2026</h3>
+                    <p>Pursuing Bachelor's degree in Computer Science Engineering. Currently in the second year of the program.</p>
                 </div>
-                <!-- Add more portfolio items here -->
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="socials" class="section">
-        <div class="content">
-            <h2>Social Links</h2>
-            <p>
-                <a href="https://www.linkedin.com/in/samyak-tripathi-97bab3251/">LinkedIn</a>
-            </p>
-            <p>
-                <a href="https://github.com/sammy-314">GitHub</a>
-            </p>
-        </div>
-    </section>
-    <section id="resume" class="section">
-        <div class="content">
-            <h2>Resume</h2>
-            <p>Click the button below to download my resume:</p>
-            <a href="front end\Resume.pdf" download class="button">Download Resume</a>
-        </div>
-    </section>
-    
-
-    <section id="contact" class="section">
-        <div class="content">
-            <h2>Contact Me</h2>
-            <div class="contact-form">
-                <input type="text" placeholder="Your Name">
-                <input type="text" placeholder="Your Email">
-                <textarea placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="button">
+        <section id="work-experience" class="section">
+            <div class="content">
+                <h2>Work Experience</h2>
+                <div class="experience-item">
+                    <h3>Web Developer & Digital Marketing Intern - B2B Industrialists</h3>
+                    <h3>Sep 2023 - Oct2023</h3>
+                    <p>Worked as an intern in the web development and digital marketing departments.</p>
+                    <p>Developed and maintained company websites and web applications using HTML, CSS, and JavaScript.</p>
+                    <p>Assisted in creating and implementing digital marketing strategies, including SEO and social media campaigns.</p>
+                    <p>Contributed to the redesign of the company's website, resulting in a 30% increase in user engagement.</p>
+                    <p>Provided technical support and troubleshooting for website issues.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Frontend Developer Intern - IBM Skillsbuild.</h3>
+                    <h3>Jun 2023 - Jul2023</h3>
+                    <p>Interned as a frontend developer, contributing to various web development projects.</p>
+                    <p>Collaborated with the design team to implement responsive and user-friendly interfaces.</p>
+                    <p>Participated in code reviews and provided feedback on code quality and best practices.</p>
+                    <p>Implemented new features and enhancements for the company's flagship product, resulting in improved user experience and performance.</p>
+                    <p>Worked closely with backend developers to integrate frontend components with server-side logic.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        &copy; Samyak Tripathi
-    </footer>
+        <section id="projects" class="section">
+            <div class="content">
+                <h2>Projects</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <h3>Car Accesories Management System</h3>
+                        <h3>Sep 2023</h3>
+                        <p>The Car Accessories Management System project was completed using Java Swing, AWT, and JFrame. The intuitive user interface, crafted with meticulous design, ensured seamless navigation and interaction. Leveraging Java's graphical capabilities, the system offered a visually appealing experience while maintaining robust functionality. Thorough testing and debugging ensured reliability and performance, delivering an effective solution for managing car accessories.</p>
+                        <a href="front end\Car Accessories Management.pdf" download class="button">View Project</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <h3>Student Database Management System</h3>
+                        <h3>Nov 2023</h3>
+                        <p>The project entailed developing a Student Database Management System using HTML, CSS, and JavaScript. It featured an HTML-based interface styled with CSS for a sleek appearance. JavaScript was utilized for backend operations like data manipulation and form validation. The system allowed users to seamlessly add, edit, and delete student records, providing an efficient solution for managing student data.</p>
+                        <a href="front end\Student Database Management.pdf" download class="button">View Project</a>
+                    </div>
+                    <!-- Add more portfolio items here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="socials" class="section">
+            <div class="content">
+                <h2>Social Links</h2>
+                <p>
+                    <a href="https://www.linkedin.com/in/samyak-tripathi-97bab3251/">LinkedIn</a>
+                </p>
+                <p>
+                    <a href="https://github.com/sammy-314">GitHub</a>
+                </p>
+            </div>
+        </section>
+
+        <section id="resume" class="section">
+            <div class="content">
+                <h2>Resume</h2>
+                <p>Click the button below to download my resume:</p>
+                <a href="front end\Resume.pdf" download class="button">Download Resume</a>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="content">
+                <h2>Contact Me</h2>
+                <div class="contact-form">
+                    <input type="text" placeholder="Your Name">
+                    <input type="text" placeholder="Your Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message" class="button">
+                </div>
+            </div>
+        </section>
+
+        <footer class="section">
+            <div class="content">
+                &copy; Samyak Tripathi
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
