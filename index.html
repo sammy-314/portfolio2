@@ -5,6 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Adjustments for mobile-friendly layout */
+        body {
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .section {
+            padding: 20px;
+            text-align: justify;
+        }
+
+        .content {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .contact-form input[type="submit"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -40,8 +101,6 @@
                 Beyond coding, I enjoy photography, hiking, and playing the guitar. As a strong advocate for open-source software, I actively contribute to projects on GitHub, collaborating with the global developer community to create a brighter future for all.</p>
         </div>
     </section>
-
-
 
     <section id="education" class="section">
         <div class="content">
@@ -82,6 +141,7 @@
             </div>
         </div>
     </section>
+
     <section id="projects" class="section">
         <div class="content">
             <h2>Projects</h2>
